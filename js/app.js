@@ -30,7 +30,6 @@ for(let i = 0; i < n; i++){
     listElement.append(liElement);
 
     let element;
-
     // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.
     if(numMult3 === 0 && numMult5 === 0){ // multipli 15
         //console.log("FizzBuzz");
@@ -46,11 +45,8 @@ for(let i = 0; i < n; i++){
         //console.log("Buzz");
         element = liElement.innerHTML = "Buzz";
         liElement.classList.add("bg__yellow");
-
-    } else { // 
+    } else {
         element = liElement.innerHTML = num;
     }
-
     console.log(element);
-
 }
