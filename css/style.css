@@ -10,12 +10,18 @@
     background-color: var(--darkblue);
 }
 
+.main-title{
+    font-size: 60px;
+    font-weight: 700;
+}
+
 ul{
     list-style: none;
 }
 
 
 li{
+    font-weight: 700;
     width: 100px;
     height: 100px;
     background-color: var(--blue);
