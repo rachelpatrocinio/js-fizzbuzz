@@ -28,28 +28,31 @@ for(let i = 0; i < n; i++){
 
     // Appendo il mio elemento object al padre UL
     listElement.append(liElement);
-
+    
+    let element;
     // Per i numeri NON multipli di 3 E NON multipli di 5 stampiamo il numero.
     if(numMult3 !== 0 && numMult5 !== 0){
-        console.log(num);
-        liElement.innerHTML = num;
+        //console.log(num);
+        element = liElement.innerHTML = num;
     }
 
     // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.
     if(numMult3 === 0 && numMult5 === 0){
-        console.log("FizzBuzz");
-        liElement.innerHTML = "FizzBuzz";
+        //console.log("FizzBuzz");
+        element = liElement.innerHTML = "FizzBuzz";
     } else if(numMult3 === 0){
         // per i multipli di 3 stampi “Buzz” al post del numero.
-        console.log("Fizz");
+        //console.log("Fizz");
         liElement.innerHTML = "Fizz";
     }
 
     if(numMult5 === 0){
         // per i multipli di 5 stampi “Buzz” al post del numero.
-        console.log("Buzz");
-        liElement.innerHTML = "Buzz";
+        //console.log("Buzz");
+        element = liElement.innerHTML = "Buzz";
     }
+
+    console.log(element);
 
    
 
