@@ -35,14 +35,18 @@ for(let i = 0; i < n; i++){
     if(numMult3 === 0 && numMult5 === 0){ // multipli 15
         //console.log("FizzBuzz");
         element = liElement.innerHTML = "FizzBuzz";
+        liElement.classList.add("bg__red");
     } else if(numMult3 === 0){ // multipli 3
         // per i multipli di 3 stampi “Buzz” al post del numero.
         //console.log("Fizz");
         liElement.innerHTML = "Fizz";
+        liElement.classList.add("bg__green");
     } else if(numMult5 === 0){ // multipli di 5
         // per i multipli di 5 stampi “Buzz” al post del numero.
         //console.log("Buzz");
         element = liElement.innerHTML = "Buzz";
+        liElement.classList.add("bg__yellow");
+
     } else { // 
         element = liElement.innerHTML = num;
     }
