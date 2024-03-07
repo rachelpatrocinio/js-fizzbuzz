@@ -4,12 +4,12 @@ console.log("JS-FIZZBUZZ");
 const listElement = document.querySelector('.list');
 
 // Scrivi un programma che stampi in console i numeri da 1 a 100
-const n = 100;
+const maxInteration = 100;
 // Dichiarare una Variabile e Assegnamo un Valore iniziale
 // Impostiamo una condizione
 // Incrementiamo di 1
-for(let i = 0; i < n; i++){
-    let num = i + 1; // Incrementiamo num di 1.
+for(let num = 1; num <= maxInteration; num++){
+    //let num = i + 1; // Incrementiamo num di 1.
     //console.log(num);
 
     // Dichiaro una variabile per i numeri multipli di 3.
@@ -29,11 +29,10 @@ for(let i = 0; i < n; i++){
     // Appendo il mio elemento object al padre UL
     listElement.append(liElement);
 
-    let element;
     // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.
     if(numMult3 === 0 && numMult5 === 0){ // multipli 15
         //console.log("FizzBuzz");
-        element = liElement.innerHTML = "FizzBuzz";
+        liElement.innerHTML = "FizzBuzz";
         liElement.classList.add("bg__red");
     } else if(numMult3 === 0){ // multipli 3
         // per i multipli di 3 stampi “Buzz” al post del numero.
@@ -43,10 +42,7 @@ for(let i = 0; i < n; i++){
     } else if(numMult5 === 0){ // multipli di 5
         // per i multipli di 5 stampi “Buzz” al post del numero.
         //console.log("Buzz");
-        element = liElement.innerHTML = "Buzz";
+        liElement.innerHTML = "Buzz";
         liElement.classList.add("bg__yellow");
-    } else {
-        element = liElement.innerHTML = num;
     }
-    console.log(element);
 }
